@@ -8,11 +8,26 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7e596160a4.js" crossorigin="anonymous"></script>
     
+    <style>
+        .animation{
+            height: auto;
+            width: 100%;
+            background-color: white;
+        }
+        .animation:hover .animation-img{
+            transform: translate(2500px);
+        }
+        .animation-img{
+            transition: transform 8s linear;
+        }
+    </style>
 </head>
 <body class="full-body">
     <!-- header start -->
     <header>
-
+        <section class="animation">
+            <div><img class="animation-img" src="images/running.gif" alt=""></div>
+        </section>
     </header>
     <!-- header end -->
     
@@ -41,9 +56,7 @@
                 </div>
             </section>
 
-            <section class="animation">
-                <img src="images/Banner Image.png" alt="">
-            </section>
+
 
             <section>
                 <div class="middle">
