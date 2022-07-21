@@ -6,16 +6,6 @@
     width: 1600px;
     height: 2534px;
 } */
-
-.top-left p span{
-    display: none;
-}
-
-.top-left p:hover + span{
-    display: block;
-    color: blue;
-}
-
 .center{
     display: flex;
     justify-content: center;
@@ -41,13 +31,16 @@
     border-radius: 5px;
     margin-left: 106px;
     margin-top: 111px;
+    margin-bottom: 111px;
     padding: 0px;
 }
 
 .top-left h1{
     font-family: 'Poppins';
+    height: 240px;
     font-size: 70px;
     font-weight: 700;
+    line-height: 80px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -152,6 +145,11 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.middle-left-item a{
+    text-decoration: none;
+    color: #161616;
 }
 
 .middle-left-item-selected{
@@ -307,6 +305,11 @@
     margin: 0px 10px;
 }
 
+.social a{
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
 /* responsive css */
 
 
@@ -417,6 +420,8 @@
         grid-row-gap: 16px;
     }
 
+    
+
     .middle-right-items{
         display: flex;
         justify-content: center;
@@ -478,7 +483,267 @@
     .footer-elements{
         margin-top: 24.31px;
     }
+
+}
+
+
+/* Responsive for tablet */
+
+@media screen and (min-width: 689px) and (max-width: 992px) {
+    .top{
+        width: 734px;
+        height: 398px;;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2px;
+        overflow: hidden;
+    }
+
+    .top-left{
+        width: 316px;
+        height: 276px;
+        border-radius: 5px;
+        margin-left: 76px;
+        margin-top: 61px;
+        padding: 0px;
+    }
+
+    .top-left h1{
+        width: 289px;
+        height: 150px;
+        font-size: 40px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 50px;
+    }
+
+    .top-left p{
+        font-family: 'Poppins';
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 8px;
+        width: 258px;
+        height: 48px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+
+    .watch-live{
+        /* display: flex; */
+        background-color: #DD0000;
+        border-radius: 5px;
+        width: 161px;
+        height: 40px;
+        padding: 8px 12px;
+    }
+
+    .top-right .image img{
+        width: 323px;
+        height: 340px;
+        margin-top: 58px;
+    }
+
+    .middle-left{
+        width: 210px;
+        height: 176px;
+    }
+
+    .middle-left-item, .middle-left-item-selected{
+        width: 230px;
+        height: 64px;
+    }
+
+    .middle-left-item{
+        border: 1px solid #E8E8E8;
+    }
+
+    .middle-right-item{
+        width: 335px;
+        height: 388.69px;
+    }
+
+    .middle{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        grid-row-gap: 2px;
+    }
+
+    .middle-left{
+        width: 100%;
+        height: 64px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        background-color: #FFFFFF;
+    }
     
+    .middle-left-items{
+        width: 100%;
+        height: 176px;
+        padding: 0px;
+        /* grid-row-gap: 16px; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        grid-column-gap: 22px;
+    }
+
     
 
+    .middle-right-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+    }
+    .middle-right-item-banner img{
+        width: 335px;
+        height: 187.9px;
+        /* border-radius: 9px 9px 0px 0px; */
+    }
+
+
+    .for-tablet{
+        display: block;
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
+
+    .footer-elements{
+        margin-top: 0px;
+    }
+
+    .footer-text{
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 0px;
+        padding: 0px;
+    }
+
+    .links{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+        text-align: center;
+    }
+
+    .link-change{
+        width: auto;
+        transform: translate(195px);
+    }
+
+    .footer-box{
+        width: 834px;
+        height: 345px;
+    }
+
+    .line hr{
+        width: 734px;
+        height: 0px;
+        text-align: center;
+        margin-bottom: 0px;
+
+    }
+
+    .footer-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link{
+        width: auto;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    .footer-elements{
+        margin-top: 24.31px;
+    }
+
+}
+/* Responsive Done Here */
+
+
+/* style for upcoming matches  */
+
+.upcoming-matches-middle-right-item{
+    width: 312px;
+    height: 242px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(185, 182, 182);
+    border-radius: 10px;
+}
+.upcoming-matches-middle-right-item-box{
+    width: 252px;
+    height: 136.18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* margin-right: 0px; */
+}
+
+.vs{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    color: #161616;
+
+}
+
+.flags{
+    width: 252px;
+    height: 56.18px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+}
+.upcoming-matches-middle-right-item-text{
+    width: 202px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.country-name{
+    width: 202px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.time-date{
+    width: 166px;
+    height: 20px;
+}
+
+.country-name, .time-date p{
+    text-align: center;
+}
+
+.country-name p{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    color: #161616;
+}
+
+.time-date p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
 }
